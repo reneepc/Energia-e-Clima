@@ -99,4 +99,4 @@ print("Início do Parsing de {}".format(directory.name))
 #for path in directory.iterdir():
 directories = directory.iterdir()
 with concurrent.futures.ProcessPoolExecutor() as executor:
-    executor.map(proc_file, directories.iterdir());
+    executor.map(proc_file, directories);
